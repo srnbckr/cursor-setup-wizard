@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Debug cursor_setup.sh",
+      "type": "bashdb",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/cursor_setup.sh",
+      "args": [],
+      "terminalKind": "integrated"
+    },
+    {
+      "name": "Bash-Debug Current File",
+      "type": "bashdb",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": "${file}",
+      "args": [],
+      "terminalKind": "integrated"
+    }
+  ]
+}
