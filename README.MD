@@ -33,7 +33,7 @@
 
 ## 📖 Table of Contents
 
-- [Why Cursor Setup Wizard?](#why-cursor-setup-wizard)
+- [❓ Why Cursor Setup Wizard?](#why-cursor-setup-wizard)
 - [📋 Prerequisites](#-prerequisites)
 - [🚀 Quick Start](#-quick-start)
 - [⭐ Features](#-features)
@@ -55,11 +55,13 @@
 
 ---
 
-<details id="why-cursor-setup-wizard" open>
-   <summary><strong>Why Cursor Setup Wizard?</strong></summary><br/>
+<details id="why-cursor-setup-wizard">
+   <summary><h2>❓Why Cursor Setup Wizard?</h2></summary><br/>
    <p>
-      This script was created to address recurring issues faced by Linux users, including myself, during <a href="https://www.cursor.com" target="_blank">Cursor</a> installation, configuration and updates. These challenges were first discussed in [<a href="https://github.com/getcursor/cursor/issues/1465" target="_blank">issue #1465 from the official Cursor repository</a>].<br/>
-      Initially, I shared a solution in a <a href="https://gist.github.com/jorcelinojunior/131748e12a039c02148a6f66e1fb312c" target="_blank">gist</a>. Based on the feedback received in the comments, I decided to evolve it into a comprehensive solution for smoother installations, resulting in this repository.
+      This script was born from the frustration many Linux users faced, including myself, with the tedious and error-prone process of setting up <a href="https://www.cursor.com" target="_blank">Cursor</a>. These issues, highlighted in <a href="https://github.com/getcursor/cursor/issues/1465" target="_blank">issue #1465 from the official Cursor repository</a>, made it clear that an automated solution was needed.<br/><br/>
+      I initially shared a workaround in a <a href="https://gist.github.com/jorcelinojunior/131748e12a039c02148a6f66e1fb312c" target="_blank">gist</a>, and the thoughtful feedback and suggestions in the comments inspired me to refine it into the tool you see here. The collaborative input from the community, including suggestions, feature requests, and shared solutions, was instrumental in shaping this project.<br/><br/>
+      Cursor Setup Wizard ensures you can focus on what truly matters: coding, without the hassle of manual steps.<br/><br/>
+      <small><em>🌟 I hope this repository proves helpful to others as well. It's an evolution of one of my first contributions, and I look forward to creating even more tools to assist the community. Feedback and improvements are always welcome! 💜</em></small>
    </p>
 </details>
 
@@ -274,11 +276,7 @@ This script is licensed under the [MIT License](./LICENSE). Feel free to use, mo
 </p>
 
 <p align="center">
-  <a href="https://t.me/jorcelinojunior" target="_blank">
-    <img src="https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/images/telegram.png" alt="Telegram" width="30"/>
-  </a>
-  <a href="https://x.com/jorcelinojunior" target="_blank">
-    <img src="https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/images/x.png" alt="X - Twitter" width="30"/>
-  </a>
-  <p> <br/> </p>
+  <a href="https://t.me/jorcelinojunior" target="_blank"><img src="https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/images/telegram.png" alt="Telegram" width="60"/></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://x.com/jorcelinojunior" target="_blank"><img src="https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/images/x.png" alt="X - Twitter" width="60"/></a>
 </p>
