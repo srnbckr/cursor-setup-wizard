@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -euo pipefail
 
@@ -9,9 +9,9 @@ readonly ICON_DIR="$HOME/.local/share/icons"
 readonly USER_DESKTOP_FILE="$HOME/Desktop/cursor.desktop"
 readonly DOWNLOAD_URL="https://downloader.cursor.sh/linux/appImage/x64"
 readonly ICON_URL="https://mintlify.s3-us-west-1.amazonaws.com/cursor/images/logo/app-logo.svg"
-readonly VERSION_CHECK_TIMEOUT=5
-readonly SPINNERS=("line" "dot" "minidot" "jump" "pulse" "points" "globe" "moon" "monkey" "meter" "hamburger")
-readonly SPINNER="${SPINNERS[9]}"
+readonly VERSION_CHECK_TIMEOUT=5 # in seconds | if you have a slow connection, increase this value to 10, 15, or more
+readonly SPINNERS=("meter" "line" "dot" "minidot" "jump" "pulse" "points" "globe" "moon" "monkey" "hamburger")
+readonly SPINNER="${SPINNERS[0]}"
 readonly DEPENDENCIES=("gum" "curl" "wget" "pv" "bc" "find:findutils" "chmod:coreutils" "timeout:coreutils" "mkdir:coreutils" "apparmor_parser:apparmor-utils")
 readonly GUM_VERSION_REQUIRED="0.14.5"
 readonly SYSTEM_DESKTOP_FILE="$HOME/.local/share/applications/cursor.desktop"
@@ -170,14 +170,18 @@ logg() {
 fetch_remote_version() {
   logg prompt "Looking for the latest version online..."
   headers=$(spinner "Fetching version info from the server..." \
-    "sleep 1 && timeout \"$VERSION_CHECK_TIMEOUT\" wget -S \"$DOWNLOAD_URL\" --limit-rate=50k -q -O /dev/null 2>&1 || true")
+    "sleep 1 && timeout \"$VERSION_CHECK_TIMEOUT\" wget -S \"$DOWNLOAD_URL\" -q -O /dev/null 2>&1 || true")
+  if [[ -z "$headers" ]]; then
+    logg error "$(echo -e "Failed to fetch headers from the server.\n   • Ensure your internet connection is active and stable.\n   • Ensure that 'VERSION_CHECK_TIMEOUT' ($VERSION_CHECK_TIMEOUT sec) is set high enough to retrieve the headers.\n   • Also, verify if 'DOWNLOAD_URL' is correct: $DOWNLOAD_URL.\n\n ")"
+    return 1
+  fi
   logg success "Latest version details retrieved successfully."
-  remote_name=$(echo "$headers" | grep -oE 'filename="[^"]+"' | sed 's/filename=//g; s/\"//g')
+  remote_name=$(echo "$headers" | grep -oE 'filename="[^"]+"' | sed 's/filename=//g; s/\"//g') || remote_name=""
   remote_size=$(echo "$headers" | grep -oE 'Content-Length: [0-9]+' | sed 's/Content-Length: //') || remote_size="0"
   remote_version=$(extract_version "$remote_name")
   remote_md5=$(echo "$headers" | grep -oE 'ETag: "[^"]+"' | sed 's/ETag: //; s/"//g' || echo "unknown")
-  if [[ -z "$remote_name" ]] || [[ -z "$remote_size" ]]; then
-    logg error "Could not fetch the version or size info. Please try again."
+  if [[ -z "$remote_name" ]]; then
+    logg error "Could not fetch the filename info. Please check that the 'DOWNLOAD_URL' variable is correct and try again."
     return 1
   fi
   logg info "$(echo -e "Latest version online:\n      - name: $remote_name\n      - version: $remote_version\n      - size: $(convert_to_mb "$remote_size")\n      - MD5 Hash: $remote_md5\n")"
