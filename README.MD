@@ -187,17 +187,27 @@ This script includes pre-configured settings for debugging in VS Code or other e
 
 ### Common Issues and Fixes
 
+#### **`Failed to fetch headers from the server`**
+This error occurs when the script cannot retrieve necessary headers from the server. Possible solutions include:
+- Ensure your internet connection is stable.
+- Check if the `VERSION_CHECK_TIMEOUT` value (default **`5` sec**) is sufficient for your connection speed. Increase it if necessary.
+- Verify that the `DOWNLOAD_URL` is correct. If you’ve modified it, ensure it points to a valid resource. The default is: [`https://downloader.cursor.sh/linux/appImage/x64`](https://downloader.cursor.sh/linux/appImage/x64).
+
+<img src="./images/online-fetch-failure.png" alt="✖ Failed to fetch headers from the server" width="850"/>
+
+---
+
 #### **`No local version found`**
 If you encounter this error, it means the AppImage could not be located. Use **`All-in-One`** to fetch it again.
 
-<img src="https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/images/no-local-version-found.png" alt="✖ No local version found in..." width="450"/>
+<img src="https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/images/no-local-version-found.png" alt="✖ No local version found in..." width="500"/>
 
 ---
 
 #### **`The password was incorrect`**
 If you see this message, re-enter your password to proceed.
 
-<img src="https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/images/the-password-was-incorrect.png" alt="✖ Oops! The password was incorrect. Try again." width="450"/>
+<img src="https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/images/the-password-was-incorrect.png" alt="✖ Oops! The password was incorrect. Try again." width="500"/>
 
 ---
 
