@@ -1,5 +1,5 @@
 <p align="right">
-   <a href="https://www.buymeacoffee.com/jorcelinojunior">
+   <a href="https://www.buymeacoffee.com/jorcelinojunior" target="_blank">
       <img src="https://img.buymeacoffee.com/button-api/?text=buy me a coffee&emoji=☕&slug=jorcelinojunior&button_colour=ffda33&font_colour=000000&font_family=Bree&outline_colour=000000&coffee_colour=FFDD00" width="160" alt="Buy Me a Coffee"/>
    </a>
 </p>
@@ -18,11 +18,11 @@
 </p>
 
 <p align="center">
-  <a href="https://buymeacoffee.com/jorcelinojunior"><img alt="Buy Me a Coffee" src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support%20Me-FFDA33"></a>
+  <a href="https://buymeacoffee.com/jorcelinojunior" target="_blank"><img alt="Buy Me a Coffee" src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support%20Me-FFDA33"></a>
   <img alt="Bash Script" src="https://img.shields.io/badge/Bash-Script-blue">
   <img alt="Ubuntu-Compatible" src="https://img.shields.io/badge/Ubuntu-Compatible-E95620">
   <img alt="License" src="https://img.shields.io/badge/License-MIT-blueviolet">
-  <a href="https://github.com/jorcelinojunior/cursor-setup-wizard/issues"><img alt="Issues" src="https://img.shields.io/github/issues/jorcelinojunior/cursor-setup-wizard"></a>
+  <a href="https://github.com/jorcelinojunior/cursor-setup-wizard/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/jorcelinojunior/cursor-setup-wizard"></a>
 </p>
 
 <p align="center">
@@ -249,7 +249,7 @@ This script is licensed under the [MIT License](./LICENSE). Feel free to use, mo
 </p>
 
 <p align="center">
-   <a href="https://www.buymeacoffee.com/jorcelinojunior">
+   <a href="https://www.buymeacoffee.com/jorcelinojunior" target="_blank">
       <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=jorcelinojunior&button_colour=ffda33&font_colour=000000&font_family=Bree&outline_colour=000000&coffee_colour=FFDD00" alt="Buy Me a Coffee"/>
    </a>
 </p>
@@ -286,7 +286,11 @@ This script is licensed under the [MIT License](./LICENSE). Feel free to use, mo
 </p>
 
 <p align="center">
-  <a href="https://t.me/jorcelinojunior" target="_blank"><img src="https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/images/telegram.png" alt="Telegram" width="60"/></a>
+  <a href="https://t.me/jorcelinojunior" target="_blank"><img src="https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/images/telegram.png" alt="Telegram" width="50"/></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://x.com/jorcelinojunior" target="_blank"><img src="https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/images/x.png" alt="X - Twitter" width="60"/></a>
+  <a href="https://x.com/jorcelinojunior" target="_blank"><img src="https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/images/x.png" alt="X - Twitter" width="50"/></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/jorcelinojunior" target="_blank"><img src="https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/images/linkedin.png" alt="LinkedIn" width="50"/></a>
 </p>
+
+<p>&nbsp;<br/>&nbsp;</p>
