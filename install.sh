@@ -3,7 +3,7 @@
 set -e
 
 # Base URL for the repository
-BASE_URL="https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main"
+BASE_URL="https://raw.githubusercontent.com/srnbckr/cursor-setup-wizard/main"
 
 # Prepare setup directory
 echo "Preparing the setup directory..."
