@@ -80,7 +80,7 @@
 To get started immediately, run:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/srnbckr/cursor-setup-wizard/main/install.sh)
 ```
 
 This command downloads the main script (`cursor_setup.sh`), places it in `${HOME:-~}/cursor-setup-wizard/`, makes it executable, and runs it. It's the fastest way to set up Cursor without hassle.
